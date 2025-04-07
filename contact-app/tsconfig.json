@@ -1,0 +1,49 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    // --- Ensure baseUrl is present and set correctly ---
+    "baseUrl": "./", // Set to "./" (project root) or "src/"
+
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true, // Enable Angular's stricter type checking modes
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true, // Optional: Can speed up builds by skipping type checks in node_modules
+    "esModuleInterop": true, // Allows default imports from commonjs modules
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true, // Required for Angular decorators
+    "moduleResolution": "node", // Standard module resolution strategy
+    "importHelpers": true, // Reduces bundle size
+    "target": "ES2022", // Target modern JavaScript version
+    "module": "ES2022", // Use modern ES Modules
+    "useDefineForClassFields": false, // Required for certain decorator patterns
+    "lib": [
+      "ES2022", // Include features for the target JS version
+      "dom" // Include DOM typings for browser environments
+    ],
+
+    // --- ADD/MODIFY THE "paths" ALIAS HERE ---
+    "paths": {
+      // Points @env/... imports to the src/environments folder
+      // Adjust ["src/environments/*"] to ["environments/*"] if baseUrl is "src/"
+      "@env/*": ["src/environments/*"],
+
+      // Add any other existing path aliases you might have here
+      // "@app/*": ["src/app/*"], // Example of another common alias
+    }
+    // --- END OF "paths" SECTION ---
+
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true, // Enforces correct DI usage
+    "strictInputAccessModifiers": true, // Enforces private/public on inputs
+    "strictTemplates": true // Enables strictest template type checking
+    // Add any other specific Angular compiler options here
+  }
+}

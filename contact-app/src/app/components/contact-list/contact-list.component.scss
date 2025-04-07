@@ -1,0 +1,96 @@
+// --- contact-list.component.scss ---
+@use '@angular/material' as mat; // Keep ONLY for the mat.elevation mixin
+
+// Define specific hex/rgba values
+$primary-color-hex: #1e88e5;
+$primary-darker-hex: #1565c0;
+$primary-lighter-hex: #bbdefb;
+$text-color-light: rgba(0, 0, 0, 0.6);
+$text-color-dark: rgba(0, 0, 0, 0.87);
+$border-color: #dce3ed;
+$hover-bg: #e8f4fd;
+$container-bg: #ffffff;
+$header-bg: #f8faff;
+$even-row-bg: #fafcff;
+
+// Main container card
+.list-container {
+  margin: 40px auto; padding: 30px 40px 40px 40px;
+  background-color: $container-bg; border-radius: 12px;
+  @include mat.elevation(6); // Apply Material shadow
+  max-width: 1200px; box-sizing: border-box;
+
+  h1 {
+    margin: 0 0 30px 0; color: $primary-darker-hex; font-size: 2.2em;
+    font-weight: 600; border-bottom: 2px solid $primary-lighter-hex;
+    padding-bottom: 15px; display: flex; align-items: center; gap: 12px;
+    mat-icon { font-size: 1.2em; height: auto; width: auto; color: $primary-color-hex; }
+  }
+}
+
+// Action bar
+.actions-bar {
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; margin-bottom: 30px; gap: 20px;
+}
+
+// Filter field styling
+.filter-field {
+  flex: 1 1 400px; max-width: 700px;
+  ::ng-deep .mat-mdc-form-field-flex { border-radius: 25px !important; padding-left: 15px; background-color: #f9fafb; }
+  ::ng-deep .mat-mdc-form-field-focus-overlay { background: none !important; }
+  ::ng-deep .mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-outline { border-color: $border-color !important; }
+  ::ng-deep .mat-mdc-form-field.mat-focused .mat-mdc-form-field-outline-thick { border-color: var(--mdc-theme-primary, $primary-color-hex) !important; }
+  ::ng-deep .mat-mdc-form-field-icon-suffix { color: $text-color-light; cursor: pointer; }
+}
+
+// Add button styling
+.add-button {
+    min-width: 180px; height: 44px; line-height: 44px; padding: 0 25px;
+    border-radius: 22px; font-weight: 500; transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    &:hover { box-shadow: 0 2px 8px rgba(30, 136, 229, 0.4); }
+    mat-icon { margin-right: 6px; vertical-align: middle; position: relative; top: -1px; }
+}
+
+// Spinner container
+.spinner-container {
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+  padding: 60px 20px; min-height: 300px;
+   p { margin-top: 20px; font-size: 1.1em; color: $text-color-light; }
+}
+
+// Table container
+.table-container { overflow-x: auto; border: 1px solid $border-color; border-radius: 8px; margin-top: 10px; }
+
+// Table styling
+.contact-table {
+  width: 100%;
+  th.mat-header-cell {
+    position: sticky; top: 0; z-index: 10; background-color: $header-bg;
+    color: $primary-darker-hex; font-weight: 600; font-size: 0.95em;
+    text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 2px solid $primary-lighter-hex;
+    padding: 12px 16px; text-align: left;
+  }
+  td.mat-cell, th.mat-header-cell {
+     padding: 14px 16px; border-bottom: 1px solid $border-color;
+     vertical-align: middle; color: $text-color-dark; font-weight: 400;
+  }
+  tr.mat-row:nth-child(even) { background-color: $even-row-bg; }
+  tr.mat-row:nth-child(odd) { background-color: $container-bg; }
+  tr.mat-row:hover { background-color: $hover-bg; cursor: default; }
+  td.mat-cell.action-cell {
+    text-align: right; white-space: nowrap; padding-right: 20px;
+    button { margin-left: 10px; transition: transform 0.2s ease; &:hover { transform: scale(1.15); } }
+  }
+  tr.mat-row.mat-no-data-row {
+    height: 100px; background-color: #f9fafb;
+    td { text-align: center; font-style: italic; color: $text-color-light; font-size: 1.1em; font-family: 'Lato', sans-serif; }
+  }
+}
+
+// Paginator styling
+mat-paginator {
+  background-color: transparent; border-radius: 0 0 8px 8px;
+  border-top: 1px solid $border-color; margin-top: -1px;
+  color: $text-color-light;
+}

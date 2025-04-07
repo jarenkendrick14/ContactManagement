@@ -1,0 +1,93 @@
+<!-- Dialog Title -->
+<h2 mat-dialog-title>{{ dialogTitle }}</h2>
+
+<!-- Dialog Content Area -->
+<mat-dialog-content>
+  <!-- Loading Spinner (shown when isLoading is true) -->
+  <div *ngIf="isLoading" class="form-loading-spinner">
+      <mat-spinner diameter="40"></mat-spinner>
+      <p>Processing...</p>
+  </div>
+
+  <!-- Form (hidden when loading) -->
+  <!-- novalidate prevents default browser validation -->
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate [hidden]="isLoading">
+
+    <!-- First Name Field -->
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>First Name</mat-label>
+      <!-- cdkFocusInitial automatically focuses this field when dialog opens -->
+      <input matInput formControlName="firstName" required cdkFocusInitial>
+      <!-- Validation Error Messages -->
+      <mat-error *ngIf="f['firstName'].touched && f['firstName'].errors?.['required']">
+        First Name is required.
+      </mat-error>
+       <mat-error *ngIf="f['firstName'].errors?.['maxlength']">
+         First Name cannot exceed 50 characters.
+       </mat-error>
+    </mat-form-field>
+
+    <!-- Last Name Field -->
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Last Name</mat-label>
+      <input matInput formControlName="lastName" required>
+      <!-- Validation Error Messages -->
+       <mat-error *ngIf="f['lastName'].touched && f['lastName'].errors?.['required']">
+         Last Name is required.
+       </mat-error>
+       <mat-error *ngIf="f['lastName'].errors?.['maxlength']">
+         Last Name cannot exceed 50 characters.
+       </mat-error>
+    </mat-form-field>
+
+    <!-- Email Field -->
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" type="email" placeholder="e.g., user@example.com">
+      <!-- Validation Error Messages -->
+       <mat-error *ngIf="f['email'].touched && f['email'].errors?.['email']">
+         Please enter a valid email address.
+       </mat-error>
+        <mat-error *ngIf="f['email'].errors?.['maxlength']">
+          Email cannot exceed 100 characters.
+        </mat-error>
+    </mat-form-field>
+
+    <!-- Phone Field -->
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Phone</mat-label>
+      <input matInput formControlName="phone" placeholder="e.g., 123-456-7890">
+      <!-- Validation Error Messages -->
+       <mat-error *ngIf="f['phone'].errors?.['maxlength']">
+         Phone cannot exceed 20 characters.
+       </mat-error>
+       <!-- Add mat-error for pattern validation if used -->
+    </mat-form-field>
+
+    <!-- NOTE: The submit button is part of mat-dialog-actions below, not inside the <form> tag itself -->
+    <!-- but clicking it triggers the (ngSubmit) on the form -->
+
+  </form> <!-- End of form tag -->
+</mat-dialog-content> <!-- End of dialog content area -->
+
+<!-- Dialog Actions Area (for buttons) -->
+<!-- Shown only when not loading -->
+<mat-dialog-actions align="end" *ngIf="!isLoading">
+
+  <!-- Cancel Button -->
+  <!-- type="button" prevents it from accidentally submitting the form -->
+  <button mat-stroked-button (click)="onCancel()" type="button">
+    Cancel
+  </button> <!-- Ensure closing tag is correct -->
+
+  <!-- Submit (Create/Update) Button -->
+  <!-- type="submit" is implicitly handled by the form's (ngSubmit) when clicked -->
+  <!-- Disabled if form is invalid OR if an operation is currently loading -->
+  <button mat-flat-button color="primary" (click)="onSubmit()" [disabled]="contactForm.invalid || isLoading">
+    <!-- Show mini spinner inside button when submitting -->
+    <mat-spinner *ngIf="isLoading" diameter="20" mode="indeterminate" class="button-spinner"></mat-spinner>
+    <!-- Show button text when not loading -->
+    <span *ngIf="!isLoading">{{ isEditMode ? 'Update' : 'Create' }}</span>
+  </button> <!-- Ensure closing tag is correct -->
+
+</mat-dialog-actions> <!-- End of dialog actions area -->

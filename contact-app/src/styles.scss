@@ -1,0 +1,47 @@
+// src/styles.scss - Pre-built Theme Mode
+
+// --- NO @use '@angular/material' ---
+// --- NO @include mat.core() ---
+// --- NO Palette definitions ($azure-theme-primary: mat.define-palette...) ---
+// --- NO Theme definition ($azure-theme: mat.define-light-theme...) ---
+// --- NO @include mat.all-component-themes ---
+
+// --- Keep ONLY Your Custom Global Styles Below ---
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  // Ensure fonts loaded in index.html are applied
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  background-color: #eef1f5; // Your desired page background
+  color: #333; // Your desired default text color
+}
+
+// Global heading styles using Poppins font
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  // Use a hardcoded color as theme variables aren't defined here
+  color: #1565c0; // Darker Blue (Hex fallback for Blue 700)
+}
+
+// Snackbar Styles (using hardcoded colors)
+.snackbar-error {
+  background-color: #d32f2f; // Red
+  color: #fff;
+  .mat-simple-snackbar-action {
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+.snackbar-success {
+  background-color: #43a047; // Green
+  color: #fff;
+  .mat-simple-snackbar-action {
+    color: #fff;
+  }
+}
+
+// --- Add any other custom global styles you had (unrelated to Material theme functions) ---

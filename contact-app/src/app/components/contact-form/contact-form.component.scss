@@ -1,0 +1,55 @@
+// --- contact-form.component.scss ---
+// NO @use '@angular/material' as mat; needed if not using functions/mixins here
+
+// Define specific hex/rgba values
+$primary-color-hex: #1e88e5;
+$primary-darker-hex: #1565c0;
+$warn-color-hex: #d32f2f;
+$border-color: #dce3ed;
+$input-bg: #f9fafb;
+$actions-footer-bg: #fdfdff;
+
+// Style the dialog title area
+::ng-deep .mat-mdc-dialog-title {
+    margin: -24px -24px 20px -24px; padding: 20px 24px;
+    border-bottom: 1px solid $border-color; background-color: #f8faff;
+    color: $primary-darker-hex; font-weight: 500; font-size: 1.4em;
+    font-family: 'Poppins', sans-serif;
+}
+
+// Style the dialog content area
+mat-dialog-content { padding: 20px 0 0 0; }
+
+// Form field enhancements
+.full-width {
+  width: 100%; margin-bottom: 20px;
+  &.mat-mdc-form-field-type-mat-outline {
+     ::ng-deep .mat-mdc-form-field-flex { background-color: $input-bg; border-radius: 6px; }
+     ::ng-deep .mat-mdc-form-field-outline { border-color: $border-color; }
+     ::ng-deep .mat-mdc-form-field.mat-focused .mat-mdc-form-field-outline-thick { border-color: var(--mdc-theme-primary, $primary-color-hex) !important; }
+  }
+  &.mat-focused { ::ng-deep .mat-mdc-floating-label { color: var(--mdc-theme-primary, $primary-color-hex); } }
+  mat-error { font-size: 0.8em; }
+}
+
+// Loading spinner overlay
+.form-loading-spinner {
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    padding: 40px 20px; min-height: 250px;
+    p { margin-top: 15px; font-style: italic; color: #666; }
+}
+
+// Dialog action buttons area
+mat-dialog-actions {
+    margin: 25px -24px -24px -24px; padding: 15px 24px;
+    border-top: 1px solid $border-color; background-color: $actions-footer-bg;
+    display: flex; justify-content: flex-end; gap: 12px;
+    button[mat-flat-button], button[mat-stroked-button] {
+      min-width: 100px; padding: 0 20px; height: 38px; line-height: 38px;
+      border-radius: 19px; font-weight: 500; font-family: 'Lato', sans-serif;
+    }
+    button[mat-stroked-button] { border-color: rgba(0,0,0,0.2); color: rgba(0,0,0,0.7); &:hover { background-color: rgba(0,0,0,0.05); } }
+}
+
+// Spinner inside submit button
+.button-spinner { display: inline-block; margin-right: 8px; vertical-align: middle; }
