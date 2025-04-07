@@ -1,0 +1,153 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Gaming 3\\source\\repos\\ContactApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DD0F4F70-4437-4978-A7C4-7B95F11BE2EF}|ContactApi\\ContactApi.csproj|c:\\users\\gaming 3\\source\\repos\\contactapi\\contactapi\\dataaccess\\contactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD0F4F70-4437-4978-A7C4-7B95F11BE2EF}|ContactApi\\ContactApi.csproj|solutionrelative:contactapi\\dataaccess\\contactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD0F4F70-4437-4978-A7C4-7B95F11BE2EF}|ContactApi\\ContactApi.csproj|c:\\users\\gaming 3\\source\\repos\\contactapi\\contactapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD0F4F70-4437-4978-A7C4-7B95F11BE2EF}|ContactApi\\ContactApi.csproj|solutionrelative:contactapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD0F4F70-4437-4978-A7C4-7B95F11BE2EF}|ContactApi\\ContactApi.csproj|c:\\users\\gaming 3\\source\\repos\\contactapi\\contactapi\\controllers\\contactscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD0F4F70-4437-4978-A7C4-7B95F11BE2EF}|ContactApi\\ContactApi.csproj|solutionrelative:contactapi\\controllers\\contactscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD0F4F70-4437-4978-A7C4-7B95F11BE2EF}|ContactApi\\ContactApi.csproj|c:\\users\\gaming 3\\source\\repos\\contactapi\\contactapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD0F4F70-4437-4978-A7C4-7B95F11BE2EF}|ContactApi\\ContactApi.csproj|solutionrelative:contactapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD0F4F70-4437-4978-A7C4-7B95F11BE2EF}|ContactApi\\ContactApi.csproj|c:\\users\\gaming 3\\source\\repos\\contactapi\\contactapi\\contactapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DD0F4F70-4437-4978-A7C4-7B95F11BE2EF}|ContactApi\\ContactApi.csproj|solutionrelative:contactapi\\contactapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD0F4F70-4437-4978-A7C4-7B95F11BE2EF}|ContactApi\\ContactApi.csproj|c:\\users\\gaming 3\\source\\repos\\contactapi\\contactapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DD0F4F70-4437-4978-A7C4-7B95F11BE2EF}|ContactApi\\ContactApi.csproj|solutionrelative:contactapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD0F4F70-4437-4978-A7C4-7B95F11BE2EF}|ContactApi\\ContactApi.csproj|c:\\users\\gaming 3\\source\\repos\\contactapi\\contactapi\\dataaccess\\icontactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD0F4F70-4437-4978-A7C4-7B95F11BE2EF}|ContactApi\\ContactApi.csproj|solutionrelative:contactapi\\dataaccess\\icontactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD0F4F70-4437-4978-A7C4-7B95F11BE2EF}|ContactApi\\ContactApi.csproj|c:\\users\\gaming 3\\source\\repos\\contactapi\\contactapi\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD0F4F70-4437-4978-A7C4-7B95F11BE2EF}|ContactApi\\ContactApi.csproj|solutionrelative:contactapi\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ContactRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming 3\\source\\repos\\ContactApi\\ContactApi\\DataAccess\\ContactRepository.cs",
+              "RelativeDocumentMoniker": "ContactApi\\DataAccess\\ContactRepository.cs",
+              "ToolTip": "C:\\Users\\Gaming 3\\source\\repos\\ContactApi\\ContactApi\\DataAccess\\ContactRepository.cs",
+              "RelativeToolTip": "ContactApi\\DataAccess\\ContactRepository.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAkwMwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T18:04:27.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ContactsController.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming 3\\source\\repos\\ContactApi\\ContactApi\\Controllers\\ContactsController.cs",
+              "RelativeDocumentMoniker": "ContactApi\\Controllers\\ContactsController.cs",
+              "ToolTip": "C:\\Users\\Gaming 3\\source\\repos\\ContactApi\\ContactApi\\Controllers\\ContactsController.cs",
+              "RelativeToolTip": "ContactApi\\Controllers\\ContactsController.cs",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAiwOMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T04:17:04.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming 3\\source\\repos\\ContactApi\\ContactApi\\Program.cs",
+              "RelativeDocumentMoniker": "ContactApi\\Program.cs",
+              "ToolTip": "C:\\Users\\Gaming 3\\source\\repos\\ContactApi\\ContactApi\\Program.cs",
+              "RelativeToolTip": "ContactApi\\Program.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAIwGQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T04:20:05.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming 3\\source\\repos\\ContactApi\\ContactApi\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "ContactApi\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\Gaming 3\\source\\repos\\ContactApi\\ContactApi\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "ContactApi\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T15:01:55.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ContactApi.csproj",
+              "DocumentMoniker": "C:\\Users\\Gaming 3\\source\\repos\\ContactApi\\ContactApi\\ContactApi.csproj",
+              "RelativeDocumentMoniker": "ContactApi\\ContactApi.csproj",
+              "ToolTip": "C:\\Users\\Gaming 3\\source\\repos\\ContactApi\\ContactApi\\ContactApi.csproj",
+              "RelativeToolTip": "ContactApi\\ContactApi.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-05T04:07:47.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Gaming 3\\source\\repos\\ContactApi\\ContactApi\\appsettings.json",
+              "RelativeDocumentMoniker": "ContactApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\Gaming 3\\source\\repos\\ContactApi\\ContactApi\\appsettings.json",
+              "RelativeToolTip": "ContactApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-04T05:21:16.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming 3\\source\\repos\\ContactApi\\ContactApi\\Models\\Contact.cs",
+              "RelativeDocumentMoniker": "ContactApi\\Models\\Contact.cs",
+              "ToolTip": "C:\\Users\\Gaming 3\\source\\repos\\ContactApi\\ContactApi\\Models\\Contact.cs",
+              "RelativeToolTip": "ContactApi\\Models\\Contact.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T04:08:46.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IContactRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming 3\\source\\repos\\ContactApi\\ContactApi\\DataAccess\\IContactRepository.cs",
+              "RelativeDocumentMoniker": "ContactApi\\DataAccess\\IContactRepository.cs",
+              "ToolTip": "C:\\Users\\Gaming 3\\source\\repos\\ContactApi\\ContactApi\\DataAccess\\IContactRepository.cs",
+              "RelativeToolTip": "ContactApi\\DataAccess\\IContactRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T04:10:29.646Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
